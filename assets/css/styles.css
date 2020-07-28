@@ -4,18 +4,34 @@
   --medium: #dddddd;
   --dark: #373a3c;
   --purple: #660066;
+  --text: #555;
 }
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
+  line-height: 2em;
+  color: var(--text);
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: "Alfa Slab One", cursive;
+  font-size: 1.75rem;
+  line-height: 1.5em;
 }
-header {
+header,
+#trabajos {
   background-color: var(--purple);
+  color: var(--white);
 }
 .navbar-brand img {
   height: 2em;
@@ -38,4 +54,35 @@ header {
 }
 p {
   margin: 0;
+}
+section {
+  padding: 3em 0;
+}
+section#carrusel {
+  padding: 0;
+}
+hr {
+  width: 20%;
+  margin: 2em auto 3em;
+  border-top: 1px solid var(--text);
+}
+#experiencia .iconify {
+  font-size: 6em;
+  color: var(--purple);
+}
+#experiencia h4 {
+  font-family: "Rubik", sans-serif;
+}
+h3.titulo {
+  font-size: 2em;
+  text-align: center;
+}
+.card {
+  margin-bottom: 2em;
+}
+#trabajos .card {
+  color: var(--text);
+}
+#trabajos hr {
+  border-top: 1px solid var(--white);
 }
