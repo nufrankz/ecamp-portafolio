@@ -1,0 +1,19 @@
+:root {
+  --white: #fff;
+  --light: rgba(0, 0, 0, 0.05);
+  --medium: #dddddd;
+  --dark: #373a3c;
+  --purple: #660066;
+}
+header {
+  background-color: var(--purple);
+}
+.carousel-item {
+  height: 550px;
+}
+.texto {
+  position: absolute;
+  top: 2em;
+  z-index: 1;
+  color: var(--white);
+}
