@@ -29,7 +29,8 @@ h6,
   line-height: 1.5em;
 }
 header,
-#trabajos {
+#trabajos,
+footer {
   background-color: var(--purple);
   color: var(--white);
 }
@@ -55,7 +56,8 @@ header,
 p {
   margin: 0;
 }
-section {
+section,
+footer {
   padding: 3em 0;
 }
 section#carrusel {
@@ -85,4 +87,12 @@ h3.titulo {
 }
 #trabajos hr {
   border-top: 1px solid var(--white);
+}
+.ask {
+  padding: 7em 0;
+}
+footer a {
+  color: var(--white);
+  font-size: 2.5em;
+  padding-right: 0.5em;
 }
