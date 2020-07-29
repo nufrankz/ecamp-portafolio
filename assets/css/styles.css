@@ -39,9 +39,15 @@ footer {
   color: var(--white);
 }
 .carousel-item {
+  position: relative;
   height: 550px;
+  text-align: center;
+  overflow: hidden;
 }
 .carousel-item img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   filter: brightness(75%);
 }
 .texto {
@@ -94,5 +100,21 @@ h3.titulo {
 footer a {
   color: var(--white);
   font-size: 2.5em;
-  padding-right: 0.5em;
+  padding: 0 0.25em;
+}
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  #experiencia .iconify {
+    font-size: 20vw;
+  }
+}
+@media (max-width: 767.98px) {
+  #experiencia .iconify {
+    font-size: 50vw;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    width: 100%;
+  }
 }
