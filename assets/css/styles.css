@@ -28,11 +28,15 @@ h6,
   font-size: 1.75rem;
   line-height: 1.5em;
 }
+header {
+  z-index: 1020;
+}
 header,
 #trabajos,
 footer {
   background-color: var(--purple);
   color: var(--white);
+  transition: all 0.2s ease;
 }
 .navbar-brand img {
   height: 2em;
@@ -65,9 +69,6 @@ p {
 section,
 footer {
   padding: 3em 0;
-}
-section#carrusel {
-  padding: 0;
 }
 hr {
   width: 20%;
