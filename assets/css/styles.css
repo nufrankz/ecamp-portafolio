@@ -4,7 +4,7 @@
   --medium: #dddddd;
   --dark: #373a3c;
   --purple: #660066;
-  --cyan: #005467;
+  --main: #bb3b3f;
   --text: #555;
 }
 body {
@@ -43,7 +43,7 @@ header {
 header,
 #trabajos,
 footer {
-  background-color: var(--cyan);
+  background-color: var(--main);
   color: var(--white);
   transition: all 0.2s ease;
 }
@@ -51,9 +51,17 @@ footer {
   height: 2em;
   color: var(--white);
 }
+section#carrusel {
+  padding-top: 0;
+}
+#carrusel hr {
+  border-top: 1px solid var(--white);
+  margin: 0.2em 0 0.5em;
+  width: 8%;
+}
 .carousel-item {
   position: relative;
-  height: 550px;
+  height: 100vh;
   text-align: center;
   overflow: hidden;
 }
@@ -86,7 +94,7 @@ hr {
 }
 #experiencia .iconify {
   font-size: 6em;
-  color: var(--cyan);
+  color: var(--main);
 }
 #experiencia h4 {
   font-family: "Rubik", sans-serif;
@@ -119,7 +127,7 @@ footer a {
   }
   .navbar-collapse {
     position: absolute;
-    background-color: var(--cyan);
+    background-color: var(--main);
     padding: 1em 0;
     right: 0;
     border-radius: 5px;
@@ -132,10 +140,5 @@ footer a {
 @media (max-width: 767.98px) {
   #experiencia .iconify {
     font-size: 50vw;
-  }
-}
-@media (min-width: 992px) {
-  .carousel-item img {
-    width: 100%;
   }
 }
