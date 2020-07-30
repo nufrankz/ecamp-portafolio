@@ -141,4 +141,7 @@ footer a {
   #experiencia .iconify {
     font-size: 50vw;
   }
+  #carrusel hr {
+    width: 33%;
+  }
 }
